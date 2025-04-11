@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Victory Screen Styles */
+.victory-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+.victory-screen h1 {
+  font-size: 48px;
+  color: #00ff00;
+  margin-bottom: 20px;
+}
+
+.victory-screen .mint-btn {
+  font-size: 24px;
+  color: white;
+  background-color: #00bcd4;
+  border: 2px solid #008c99;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.victory-screen .mint-btn:hover {
+  background-color: #008c99;
+}
+
+/* General Layout Styling */
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
