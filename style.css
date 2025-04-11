@@ -1,3 +1,23 @@
+/* Touch controls for mobile */
+.touch-controls {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 999;
+}
+
+.touch-controls button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+}
 /* Basic Reset */
 * {
   margin: 0;
