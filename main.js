@@ -60,6 +60,27 @@ function create() {
 
   startMenuImage = this.add.image(400, 300, 'startMenu').setDepth(20);
 
+  document.getElementById('btn-left').addEventListener('touchstart', () => {
+  player.setVelocityX(-160);
+});
+
+document.getElementById('btn-right').addEventListener('touchstart', () => {
+  player.setVelocityX(160);
+});
+
+document.getElementById('btn-left').addEventListener('touchend', () => {
+  player.setVelocityX(0);
+});
+
+document.getElementById('btn-right').addEventListener('touchend', () => {
+  player.setVelocityX(0);
+});
+
+document.getElementById('btn-action').addEventListener('touchstart', () => {
+  // Replace this with any action, like jump, grab, or shoot
+  playerJump();
+});
+  
   this.input.keyboard.on('keydown-LEFT', () => {
     moveLeft = true;
     overlay.setTexture('overlay_left');
